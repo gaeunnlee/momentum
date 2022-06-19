@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Momentum</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <button id="refreshBtn" class="hidden">Logout</button>
+
+    <h1 id="clock"></h1>
+
+    <h2 id="qName" class="hidden">Hello, what's your name?</h2>
+    <form id="greetingForm" autocomplete="off">
+      <input type="text" id="userName" required>
+    </form> 
+    <h3 id="greeting" class="hidden"></h3>
+    <div id="toDoDiv" class="hidden">
+      <h2>To Do List</h2>
+      <ul id="toDoList">
+      </ul>
+      <form id="toDoForm" autocomplete="off">
+        <input type="text" id="todoText" required placeholder="What is your main focus for today?">
+      </form>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="background.js"></script>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
